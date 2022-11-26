@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>forum アプリケーション</title>
+</head>
+<body>
+    {%for language in language_list %}  
+        {%if language != "Swift" and language != "Kotlin" %}
+         <th>{{language}}</th>
+        {%endif%}
+    {%endfor%}
+</body>
